@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: api-page
 title: Candidate
 permalink: /documentation/api/candidate/
+api_menu: yes
 ---
 
 # Candidate
