@@ -5,8 +5,6 @@ permalink: /documentation/api/vacancies/
 api_menu: yes
 ---
 
-# Vacancy
-
 ### GET Vacancy
 
 | URL | `http://api.tempurer.com/services/vacancy.svc/get/{Id}` |

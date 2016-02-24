@@ -5,8 +5,6 @@ permalink: /documentation/api/candidate-education/
 api_menu: yes
 ---
 
-# Candidate Education
-
 ### Overview
 
 | URL | `https://api.thesearchparty.com/1.0/education` |

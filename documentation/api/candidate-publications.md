@@ -5,8 +5,6 @@ permalink: /documentation/api/candidate-publications/
 api_menu: yes
 ---
 
-# Candidate Publications
-
 ### Overview
 
 | URL | `https://api.thesearchparty.com/1.0/publications` |

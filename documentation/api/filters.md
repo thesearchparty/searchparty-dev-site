@@ -5,8 +5,6 @@ permalink: /documentation/api/filters/
 api_menu: yes
 ---
 
-# Filters
-
 ### Countries
 
 | URL | `http://api.tempurer.com/services/filters.svc/listcountries` |

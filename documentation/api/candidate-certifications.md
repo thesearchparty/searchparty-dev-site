@@ -5,8 +5,6 @@ permalink: /documentation/api/candidate-certifications/
 api_menu: yes
 ---
 
-# Candidate Certifications
-
 ### Overview
 
 | URL | `https://api.thesearchparty.com/1.0/Certifications` |

@@ -5,8 +5,6 @@ permalink: /documentation/api/candidate/
 api_menu: yes
 ---
 
-# Candidate
-
 ### Overview
 
 | URL | `https://api.thesearchparty.com/1.0/Candidate` |

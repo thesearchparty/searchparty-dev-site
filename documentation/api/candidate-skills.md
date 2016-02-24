@@ -5,8 +5,6 @@ permalink: /documentation/api/candidate-skills/
 api_menu: yes
 ---
 
-# Candidate Skills
-
 ### Overview
 
 | URL | `https://api.thesearchparty.com/1.0/skills` |
