@@ -44,10 +44,52 @@ $on-laptop:        800px;
 }
 
 
+nav {
+	
+	background-color: #305066 !important;
+    
+	img {
+		padding-top: 10px;
+	}
+
+	a {
+		color: white !important;
+		&:hover {
+			text-decoration: underline !important;
+		}
+	}
+}
+
+.container {
+	padding-top: 60px;
+}
+
+.white-bg {
+	background-color: white;
+}
+
+.home-banner {
+  font-size: 48px;
+  line-height: 68px;
+  color: white;
+  text-shadow: 1px 1px 2px #333;
+  padding: 15px; }
+
+.footer {
+	//background-color: #305066 !important;
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.home {
+  background: url(../images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+@import "bootstrap/bootstrap";
+@import "base";

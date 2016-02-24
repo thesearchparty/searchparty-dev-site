@@ -3,15 +3,35 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="home">
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+    <div class="container">
+          
+    <h1 class="home-banner">The Search Party Developer Center</h1>
+      <div class="container white-bg">
+        <h2>Welcome to The Search Party Developer Center</h2>
+        <br>
+        <p>
+          Looking to connect to <strong>&#39;The Search Party&#39;?</strong>
+        </p>
+        <h2 class="glyphHeading">
+          <a href="/documentation/">
+              <span class="glyphicon glyphicon-hand-right"></span>
+              Getting Started
+          </a>
+        </h2>
+        <h2 class="glyphHeading">
+          <a href="/code-examples/">
+              <span class="glyphicon glyphicon-globe"></span>
+              Code Examples
+          </a>
+        </h2>
       </div>
+
     </div>
+    
 
     {% include footer.html %}
 
