@@ -1,6 +1,77 @@
-.right-border {
-	border-right: 1px solid black;
+// TOP NAVIGATION
+nav {
+	
+	background-color: #305066 !important;
+    
+	img {
+		padding-top: 10px;
+	}
+
+	a {
+		color: white !important;
+		&:hover {
+			text-decoration: underline !important;
+		}
+	}
 }
+
+// OTHER STYLES
+h2, h1 {
+  font-family: 'Open Sans' !important; 
+}
+
+footer ul {
+	// margin-left: 0 !important;
+	margin-left: -40px;
+	list-style: none;
+}
+
+// Add padding between container and nav
+.top-pad {
+	padding-top: 60px;
+	padding-bottom: 130px;
+
+}
+
+
+.content {
+	background-color: white;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.home-banner {
+  font-size: 48px;
+  line-height: 68px;
+  color: white;
+  text-shadow: 1px 1px 2px #333;
+  padding: 15px; }
+
+.bg-image {
+  background: url(../images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+}
+
+.page-title {
+	text-decoration: underline;
+}
+
+.footer {
+	padding-top: 5px;
+	background-color: #305066 !important;
+	// position: absolute;
+ 	// bottom: 0;
+ 	// width: 100% !important;
+ 	height: 130px;
+    a {
+    	color: white !important;
+   	}
+}
+
+
 
 .bg-blue {
 	background-color: #305066;

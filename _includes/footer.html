@@ -1,24 +1,22 @@
 <footer class="footer navbar-fixed-bottom">
-
-
 	<div class="container">
-	<div class="row">
-	<div class="col-md-4">
-		<ul class="bs-docs-footer-links muted pull-left">			
-		{% for my_page in site.pages %}
-          {% if my_page.main_menu %}
-          <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-        <li><a href="/documentation/api/">API Reference</a></li>
-        <li><a href="https://github.com/thesearchparty">GitHub</a></li>
-		</ul>
-	</div>        
-	<div class="col-md-3 col-md-offset-4">
-		<a href="http://www.thesearchparty.com">
-			<img src="{{ site.baseurl }}/images/searchparty-logo-footer.png" class="pull-right">
-		</a>
-	</div>
-	</div>
+		<div class="row">
+			<div class="col-md-4">
+				<ul class="bs-docs-footer-links muted pull-left">			
+				{% for my_page in site.pages %}
+		          {% if my_page.main_menu %}
+		          <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+		          {% endif %}
+		        {% endfor %}
+		        <li><a href="{{ site.baseurl }}/documentation/api/">API Reference</a></li>
+		        <li><a href="https://github.com/thesearchparty">GitHub</a></li>
+				</ul>
+			</div>        
+			<div class="col-md-3 col-md-offset-4">
+				<a href="http://www.thesearchparty.com">
+					<img src="{{ site.baseurl }}/images/searchparty-logo-footer.png" class="pull-right">
+				</a>
+			</div>
+		</div>
 	</div>
 </footer>
