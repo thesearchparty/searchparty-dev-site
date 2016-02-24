@@ -17,3 +17,11 @@ The current version of the API is 1.0
 - Add an API application and get your API key & secret
 2. Start making calls to the API...
 - Download the samples off [Github](https://github.com/thesearchparty) as a reference and start integrating!
+
+*   [Candidate](/documentation/api/candidate)
+*   [Candidate Education](/documentation/api/candidate-education)
+*   [Candidate Certifications](/documentation/api/candidate-certifications)
+*   [Candidate Publications](/documentation/api/candidate-publications)
+*   [Candidate Skills](/documentation/api/candidate-skills)
+*   [Filters](/documentation/api/filters)
+*   [Vacancy](/documentation/api/vacancies)

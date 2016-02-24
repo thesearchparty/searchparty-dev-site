@@ -1,0 +1,96 @@
+<!DOCTYPE html(lang='en')><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="viewport" content="width=device-width"/><title> Candidate Education - The Search Party Developer Center  </title><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300"/><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:700"/><link rel="stylesheet" href="/css/style.css"/></head><body data-spy="scroll" data-target=".sidebar"><div class="wrap"><header id="top" class="navbar navbar-inverse"><div class="container"><a href="/"><img src="/images/searchparty-logo-header.png" class="pull-left"/></a><div class="navbar-header"><button type="button" data-toggle="collapse" data-target=".bs-navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse pull-right"><ul class="nav navbar-nav"><li><a href="/">Developer home</a></li><li><a href="/documentation/api">Documentation</a></li><li><a href="/code-examples/">Code Examples</a></li></ul></nav></div></header><div class="container"><div class="row"><div class="col-md-9"><h1 class="page-header">Candidate Education</h1><h3 id="overview">Overview</h3>
+
+<table>
+    <tr>
+        <td>URL</td>
+        <td><code>https://api.thesearchparty.com/1.0/education</code></td>
+    </tr>
+    <tr>
+        <td>Methods Supported</td>
+        <td>GET , POST, DELETE</td>
+    </tr>
+    <tr>
+        <td>Description</td>
+        <td>
+            Allows you to retrieve a candidate education by their ID (GUID)
+            <br>
+            Allows you to update an existing candidate education<br>            Allows you to delete candidate education record</td>
+    </tr>
+</table>
+
+<p><h3 id="get-candidate-skills">GET Education(s)</h3>
+The GET method supports retrieving education(s) by Candidate ID</p>
+<p><code>https://api.thesearchparty.com/1.0/education?candidateid={CandidateID}</code></p>
+<pre><code class="lang-javascript">[
+    {
+        &quot;Id&quot;: &quot;8d68a07e-d1f3-e011-929d-842b2b6577a5&quot;,
+        &quot;CandidateId&quot;: &quot;7868a07e-d1f3-e011-929d-842b2b6577a5&quot;,
+        &quot;EducationType&quot;: null,
+        &quot;EducationTypeId&quot;: &quot;9cad8cb9-b7f3-e011-929d-842b2b6577a5&quot;,
+        &quot;EducationTitle&quot;: &quot;Physics&quot;,
+        &quot;City&quot;: &quot;&quot;,
+        &quot;CountryId&quot;: null,
+        &quot;CountryText&quot;: null,
+        &quot;Institution&quot;: &quot;Sree Naryana College&quot;,
+        &quot;Grade&quot;: &quot;82%&quot;,
+        &quot;AwardType&quot;: &quot;Bachelors Degree&quot;,
+        &quot;StartDate&quot;: &quot;1993-01-01T00:00:00&quot;,
+        &quot;EndDate&quot;: &quot;1996-01-01T00:00:00&quot;
+    },
+    {
+        &quot;Id&quot;: &quot;8e68a07e-d1f3-e011-929d-842b2b6577a5&quot;,
+        &quot;CandidateId&quot;: &quot;7868a07e-d1f3-e011-929d-842b2b6577a5&quot;,
+        &quot;EducationType&quot;: null,
+        &quot;EducationTypeId&quot;: &quot;9dad8cb9-b7f3-e011-929d-842b2b6577a5&quot;,
+        &quot;EducationTitle&quot;: &quot;&quot;,
+        &quot;City&quot;: &quot;&quot;,
+        &quot;CountryId&quot;: null,
+        &quot;CountryText&quot;: null,
+        &quot;Institution&quot;: &quot;Centre of Excellence Lead&quot;,
+        &quot;Grade&quot;: &quot;&quot;,
+        &quot;AwardType&quot;: &quot;&quot;,
+        &quot;StartDate&quot;: &quot;2009-06-01T00:00:00&quot;,
+        &quot;EndDate&quot;: null
+    },
+</code></pre>
+<hr>
+<p><h3 id="post-education">POST Education</h3>
+The POST method supports updating or creating an Education record. The only difference for an update and a create is the presence of ‘Id’ field. If this is present then update is attempted.</p>
+<h4 id="new-education">New Education</h4>
+<pre><code class="lang-javascript">{
+        &quot;CandidateId&quot;: &quot;7868a07e-d1f3-e011-929d-842b2b6577a5&quot;,
+        &quot;EducationType&quot;: null,
+        &quot;EducationTypeId&quot;: &quot;9cad8cb9-b7f3-e011-929d-842b2b6577a5&quot;,
+        &quot;EducationTitle&quot;: &quot;Physics&quot;,
+        &quot;City&quot;: &quot;&quot;,
+        &quot;CountryId&quot;: null,
+        &quot;CountryText&quot;: null,
+        &quot;Institution&quot;: &quot;Sree Naryana College&quot;,
+        &quot;Grade&quot;: &quot;82%&quot;,
+        &quot;AwardType&quot;: &quot;Bachelors Degree&quot;,
+        &quot;StartDate&quot;: &quot;1993-01-01T00:00:00&quot;,
+        &quot;EndDate&quot;: &quot;1996-01-01T00:00:00&quot;
+}
+</code></pre>
+<h4 id="update-publication">Update Publication</h4>
+<pre><code class="lang-javascript">{
+        &quot;Id&quot;: &quot;85be46db-cbad-e411-8255-00232485f033&quot;,
+        &quot;CandidateId&quot;: &quot;7868a07e-d1f3-e011-929d-842b2b6577a5&quot;,
+        &quot;EducationType&quot;: null,
+        &quot;EducationTypeId&quot;: &quot;9cad8cb9-b7f3-e011-929d-842b2b6577a5&quot;,
+        &quot;EducationTitle&quot;: &quot;Physics&quot;,
+        &quot;City&quot;: &quot;&quot;,
+        &quot;CountryId&quot;: null,
+        &quot;CountryText&quot;: null,
+        &quot;Institution&quot;: &quot;Sree Naryana College&quot;,
+        &quot;Grade&quot;: &quot;82%&quot;,
+        &quot;AwardType&quot;: &quot;Bachelors Degree&quot;,
+        &quot;StartDate&quot;: &quot;1993-01-01T00:00:00&quot;,
+        &quot;EndDate&quot;: &quot;1996-01-01T00:00:00&quot;
+}
+</code></pre>
+<hr>
+<p><h3 id="delete-education">DELETE Education</h3>
+Delete Education row by Id</p>
+<p><code>https://api.thesearchparty.com/1.0/education/{ID}</code></p>
+</div><div class="col-md-3"><nav class="sidebar hidden-print hidden-xs hidden-sm affix"><ul class="nav right-nav"><li><a href="/documentation/api/candidate">Candidate</a></li><li class="active"><a href="/documentation/api/candidate-education">Candidate Education</a></li><li><a href="/documentation/api/candidate-certifications">Candidate Certifications</a></li><li><a href="/documentation/api/candidate-publications">Candidate Publications</a></li><li><a href="/documentation/api/candidate-skills">Candidate Skills</a></li><li><a href="/documentation/api/filters">Filters</a></li><li><a href="/documentation/api/vacancies">Vacancy</a></li></ul></nav></div></div></div></div><footer><div class="container"><div class="row"><div class="col-md-4"><ul class="bs-docs-footer-links muted pull-left"><li><a href="/">Developer Home</a></li>            <li><a href="/documentation/">Documentation</a></li>            <li><a href="/documentation/api/">API Reference</a></li>            <li><a href="/code-examples/">Code Examples</a></li>            <li><a href="https://github.com/thesearchparty">GitHub</a></li></ul></div>        <div class="col-md-3 col-md-offset-4"><a href="http://www.thesearchparty.com"><img src="/images/searchparty-logo-footer.png" class="pull-right"/></a></div></div></div></footer>  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script><script src="/script/site.js"></script><script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script></body>
