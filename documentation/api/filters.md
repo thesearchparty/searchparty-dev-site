@@ -7,9 +7,21 @@ api_menu: yes
 
 ### Countries
 
-| URL | `http://api.tempurer.com/services/filters.svc/listcountries` |
-| Methods Supported | GET |
-| Description | Retrieve a list of all countries. |
+<table class="table table-striped">
+  <tbody><tr>
+    <td>URL</td>
+    <td><code>http://api.tempurer.com/services/filters.svc/listcountries</code></td>
+  </tr>
+    <tr>
+    <td>Methods Supported</td>
+    <td>GET</td>
+  </tr>
+      <tr>
+    <td>Description</td>
+    <td>Retrieve a list of all countries.</td>
+  </tr>
+</tbody>
+</table>
 
 ```
    [
@@ -57,18 +69,54 @@ api_menu: yes
 
 ### Locality Best Match
 
-| URL | `http://api.tempurer.com/services/filters.svc/localitybestmatch` |
-| Methods Supported | GET |
-| Description | Tries to find a best match locality for the location radius search. |
+<table class="table table-striped">
+  <tbody><tr>
+    <td>URL</td>
+    <td><code>http://api.tempurer.com/services/filters.svc/localitybestmatch</code></td>
+  </tr>
+    <tr>
+    <td>Methods Supported</td>
+    <td>GET</td>
+  </tr>
+      <tr>
+    <td>Description</td>
+    <td>Tries to find a best match locality for the location radius search.</td>
+  </tr>
+</tbody></table>
 
 #### Parameters
 
-| Name | Mandatory | Description |
-| --- | --- | --- |
-| lco (Country) | Yes | The system will try to find a best-match locality for the specified country. |
-| lst (State) | No | The system will try to find a best-match locality for the specified country, within the specified State. |
-| lsu (Suburb) | No | The system will try to find a best-match locality for the specified country, within the specified suburb. |
-| lpo (Postcode) | No | The system will try to find a best-match locality for the specified country, within the specified postal code area. |
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Mandatory</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>lco (Country)</td>
+            <td>Yes</td>
+            <td>The system will try to find a best-match locality for the specified country.</td>
+            </tr>
+            <tr>
+            <td>lst (State)</td>
+            <td>No</td>
+            <td>The system will try to find a best-match locality for the specified country, within the specified State.</td>
+            </tr>
+            <tr>
+            <td>lsu (Suburb)</td>
+            <td>No</td>
+            <td>The system will try to find a best-match locality for the specified country, within the specified suburb.</td>
+            </tr>
+            <tr>
+            <td>lpo (Postcode)</td>
+            <td>No</td>
+            <td>The system will try to find a best-match locality for the specified country, within the specified postal code area.</td>
+        </tr>
+    </tbody>
+</table>
 
 ```
     {
@@ -88,17 +136,43 @@ api_menu: yes
 
 ### States
 
-| URL | `http://api.tempurer.com/services/filters.svc/liststates` |
-| Methods Supported | GET |
-| Description | Retrieve a list of all states in given country. |
+<table class="table table-striped">
+      <tbody>
+        <tr>
+        <td>URL</td>
+        <td><code>http://api.tempurer.com/services/filters.svc/liststates</code></td>
+      </tr>
+        <tr>
+        <td>Methods Supported</td>
+        <td>GET</td>
+      </tr>
+          <tr>
+        <td>Description</td>
+        <td>Retrieve a list of all states in given country.</td>
+      </tr>
+    </tbody>
+</table>
 
 #### Parameters
 
 `http://api.tempurer.com/services/filters.svc/liststates/{COUNTRYID}`
 
-| Name | Mandatory | Description |
-| --- | --- | --- |
-| countryId | Yes | The system will retrieve all the States in the specified country. |
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Mandatory</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>countryId</td>
+        <td>Yes</td>
+        <td>The system will retrieve all the States in the specified country.</td>
+    </tr>
+    </tbody>
+</table>
 
 ```
     [
@@ -129,9 +203,20 @@ api_menu: yes
 
 ### Sectors
 
-| URL | `http://api.tempurer.com/services/filters.svc/listsectors` |
-| Methods Supported | GET |
-| Description | Retrieve a list of all top level sectors. |
+<table class="table table-striped">
+  <tbody><tr>
+    <td>URL</td>
+    <td><code>http://api.tempurer.com/services/filters.svc/listsectors</code></td>
+  </tr>
+    <tr>
+    <td>Methods Supported</td>
+    <td>GET</td>
+  </tr>
+      <tr>
+    <td>Description</td>
+    <td>Retrieve a list of all top level sectors.</td>
+  </tr>
+</tbody></table>
 
 ```
    {
@@ -164,15 +249,39 @@ api_menu: yes
 
 ### Sub-Sectors
 
-| URL | `http://api.tempurer.com/services/filters.svc/listsubsectors/` |
-| Methods Supported | GET |
-| Description | Retrieve a list of all the subsectors of a specific sector. |
+<table class="table table-striped">
+  <tbody><tr>
+    <td>URL</td>
+    <td><code>http://api.tempurer.com/services/filters.svc/listsubsectors/</code></td>
+  </tr>
+    <tr>
+    <td>Methods Supported</td>
+    <td>GET</td>
+  </tr>
+      <tr>
+    <td>Description</td>
+    <td>Retrieve a list of all the subsectors of a specific sector.</td>
+  </tr>
+</tbody></table>
 
 #### Parameters
 
-| Name | Mandatory | Description |
-| --- | --- | --- |
-| sectorid | Yes | The system will retrieve all the subsectors of the specified sector. |
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Mandatory</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>sectorid</td>
+        <td>Yes</td>
+        <td>The system will retrieve all the subsectors of the specified sector.</td>
+    </tr>
+    </tbody>
+</table>
 
 ```
    {

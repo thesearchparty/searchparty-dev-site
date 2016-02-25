@@ -7,9 +7,22 @@ api_menu: yes
 
 ### Overview
 
-| URL | `https://api.thesearchparty.com/1.0/Candidate` |
-| Methods Supported | GET , POST |
-| Description | Allows you to retrieve a candidate by their ID (GUID) |
+<table class="table table-striped">
+  <tbody>
+  <tr>
+    <td>URL</td>
+    <td><code>https://api.thesearchparty.com/1.0/Candidate</code></td>
+  </tr>
+    <tr>
+    <td>Methods Supported</td>
+    <td>GET , POST</td>
+  </tr>
+      <tr>
+    <td>Description</td>
+    <td>Allows you to retrieve a candidate by their ID (GUID)</td>
+  </tr>
+</tbody>
+</table>
 
 ### GET Candidate
 
@@ -115,11 +128,3 @@ To retrieve Candidate simply pass in ID of the Candidate in the query string
 The POST method supports updating or creating a candidate. The only difference for an update and a create is the presence of ‘Id’ field. If this is present then update is attempted.
 
 The response contains the candidate object, the same object that is retrieved by the GET above.
-
-*   [Candidate](/documentation/api/candidate)
-*   [Candidate Education](/documentation/api/candidate-education)
-*   [Candidate Certifications](/documentation/api/candidate-certifications)
-*   [Candidate Publications](/documentation/api/candidate-publications)
-*   [Candidate Skills](/documentation/api/candidate-skills)
-*   [Filters](/documentation/api/filters)
-*   [Vacancy](/documentation/api/vacancies)

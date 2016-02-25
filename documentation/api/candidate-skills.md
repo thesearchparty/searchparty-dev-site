@@ -7,11 +7,24 @@ api_menu: yes
 
 ### Overview
 
-| URL | `https://api.thesearchparty.com/1.0/skills` |
-| Methods Supported | GET , POST, DELETE |
-| Description | Allows you to retrieve a candidate by their ID (GUID)
-Allows you to update an existing candidate
-Allows you to create a new candidate |
+<table class="table table-striped">
+    <tbody><tr>
+        <td>URL</td>
+        <td><code>https://api.thesearchparty.com/1.0/skills</code></td>
+    </tr>
+    <tr>
+        <td>Methods Supported</td>
+        <td>GET , POST, DELETE</td>
+    </tr>
+    <tr>
+        <td>Description</td>
+        <td>
+            Allows you to retrieve a candidate by their ID (GUID)
+            <br>
+            Allows you to update an existing candidate
+            <br>Allows you to create a new candidate</td>
+    </tr>
+</tbody></table>
 
 ### GET Skill(s)
 

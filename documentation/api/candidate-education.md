@@ -7,11 +7,23 @@ api_menu: yes
 
 ### Overview
 
-| URL | `https://api.thesearchparty.com/1.0/education` |
-| Methods Supported | GET , POST, DELETE |
-| Description | Allows you to retrieve a candidate education by their ID (GUID)
-Allows you to update an existing candidate education
-Allows you to delete candidate education record |
+<table class="table table-striped">
+    <tbody><tr>
+        <td>URL</td>
+        <td><code>https://api.thesearchparty.com/1.0/education</code></td>
+    </tr>
+    <tr>
+        <td>Methods Supported</td>
+        <td>GET , POST, DELETE</td>
+    </tr>
+    <tr>
+        <td>Description</td>
+        <td>
+            Allows you to retrieve a candidate education by their ID (GUID)
+            <br>
+            Allows you to update an existing candidate education<br>            Allows you to delete candidate education record</td>
+    </tr>
+</tbody></table>
 
 ### GET Education(s)
 

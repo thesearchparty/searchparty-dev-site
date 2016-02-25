@@ -7,13 +7,28 @@ api_menu: yes
 
 ### Overview
 
-| URL | `https://api.thesearchparty.com/1.0/Certifications` |
-| Methods Supported | GET, POST, DELETE |
-| Description | Allows you to retrieve Candidate Certifications by their Candidate ID (GUID)
-
-Allows you to create a new Candidate Certification
-Allows you to update an existing Candidate Certification
-Allows you to delete a Candidate Certification |
+<table class="table table-striped">
+    <tbody><tr>
+        <td>URL</td>
+        <td><code>https://api.thesearchparty.com/1.0/Certifications</code></td>
+    </tr>
+    <tr>
+        <td>Methods Supported</td>
+        <td>GET, POST, DELETE</td>
+    </tr>
+    <tr>
+        <td>Description</td>
+        <td>
+            Allows you to retrieve Candidate Certifications by their Candidate ID (GUID)
+            <br>
+            Allows you to create a new Candidate Certification
+            <br>
+            Allows you to update an existing Candidate Certification
+            <br>Allows you to delete a Candidate Certification
+        </td>
+    </tr>
+    </tbody>
+</table>
 
 ### GET Certification(s)
 
