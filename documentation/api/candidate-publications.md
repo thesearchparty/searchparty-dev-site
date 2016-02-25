@@ -26,7 +26,9 @@ api_menu: yes
             Allows you to update an existing candidate publication
             <br>Allows you to delete a candidate publication</td>
     </tr>
-</tbody></table>
+    </tbody>
+</table>
+
 ### GET Publication(s)
 
 The GET method supports retrieving publication(s) for a given Candidate

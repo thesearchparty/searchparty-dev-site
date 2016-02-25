@@ -111,12 +111,3 @@ The POST method supports updating or creating Certification. The only difference
 Delete Certification by ID
 
 `https://api.thesearchparty.com/1.0/certifications/{ID}`
-
-
-*   [Candidate](/documentation/api/candidate)
-*   [Candidate Education](/documentation/api/candidate-education)
-*   [Candidate Certifications](/documentation/api/candidate-certifications)
-*   [Candidate Publications](/documentation/api/candidate-publications)
-*   [Candidate Skills](/documentation/api/candidate-skills)
-*   [Filters](/documentation/api/filters)
-*   [Vacancy](/documentation/api/vacancies)

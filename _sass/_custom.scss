@@ -18,6 +18,7 @@ nav {
 // OTHER STYLES
 h2, h1 {
   font-family: 'Open Sans' !important; 
+      padding-top: 10px !important;
 }
 
 footer ul {
@@ -28,16 +29,15 @@ footer ul {
 
 // Add padding between container and nav
 .top-pad {
-	padding-top: 60px;
+	padding-top: 50px;
 	padding-bottom: 130px;
-
 }
-
 
 .content {
 	background-color: white;
-	padding: 10px;
+	padding: 0px 10px 20px 10px;
 	margin-bottom: 10px;
+	border-radius: 10px;
 }
 
 .home-banner {
@@ -61,17 +61,13 @@ footer ul {
 
 .footer {
 	padding-top: 5px;
-	background-color: #305066 !important;
-	// position: absolute;
- 	// bottom: 0;
- 	// width: 100% !important;
+	background-color: #305066 !important;	
  	height: 130px;
+ 	
     a {
     	color: white !important;
    	}
 }
-
-
 
 .bg-blue {
 	background-color: #305066;
