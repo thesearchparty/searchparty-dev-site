@@ -10,8 +10,8 @@ title: Search Party Developer Center
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Developer Support site for Search Party
-baseurl: "/SearchPartyDeveloperSite" # the subpath of your site, e.g. /blog
-url: "http://jbcool17.github.io/" # the base hostname & protocol for your site
+baseurl: "/searchparty-dev-site" # the subpath of your site, e.g. /blog
+url: "http://thesearchparty.github.io/" # the base hostname & protocol for your site
 twitter_username: TheSearchParty
 github_username:  thesearchparty
 
